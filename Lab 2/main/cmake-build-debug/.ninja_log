@@ -1,0 +1,15 @@
+# ninja log v5
+1	138	6987697613147120	CMakeFiles/main.dir/main.c.obj	31a82931df21925a
+11	180	6987697613577224	CMakeFiles/main.dir/functions.c.obj	ec0ba840bac8da4
+181	431	6987697616019426	main.exe	ada6406c9ca78e4
+5	136	6987698612578880	CMakeFiles/main.dir/main.c.obj	31a82931df21925a
+15	173	6987698612948985	CMakeFiles/main.dir/functions.c.obj	ec0ba840bac8da4
+173	347	6987698614617128	main.exe	ada6406c9ca78e4
+2	51	6987700998125084	CMakeFiles/main.dir/main.c.obj	31a82931df21925a
+51	119	6987700998785233	main.exe	ada6406c9ca78e4
+2	63	6987705719364790	CMakeFiles/main.dir/functions.c.obj	ec0ba840bac8da4
+63	132	6987705720017790	main.exe	ada6406c9ca78e4
+2	64	6987706263943070	CMakeFiles/main.dir/functions.c.obj	ec0ba840bac8da4
+64	131	6987706264593213	main.exe	ada6406c9ca78e4
+1	48	6987706491473370	CMakeFiles/main.dir/main.c.obj	31a82931df21925a
+48	115	6987706492123517	main.exe	ada6406c9ca78e4
