@@ -15,4 +15,5 @@ int* rowMinimums(int rows, int cols, int **pMatrix);
 int minimumValueOfMatrix(int rows, int cols, int **pMatrix);
 float averageOfMatrixElements(int rows, int cols, int **pMatrix);
 void deallocateMemoryForMatrix(int rows, int ***dpMatrix);
+void lastDigit(int rows, int cols, int***dpMatrix);
 #endif //MAIN_FUNCTIONS_H

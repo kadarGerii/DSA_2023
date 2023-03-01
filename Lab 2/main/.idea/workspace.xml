@@ -17,7 +17,32 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31b0b83f-093e-4085-a87a-4fe1035fe2d5" name="Changes" comment="" />
+    <list default="true" id="31b0b83f-093e-4085-a87a-4fe1035fe2d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab3_1/cmake-build-debug/data.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/Headers/constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../gyak1/Headers/constants.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b6bdfbdbb2835b7fdb93.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-c6fd2d4e3a5cad2b16bc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f8b7586866608058ad41.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/.cmake/api/v1/reply/index-2023-02-15T11-56-37-0116.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/.cmake/api/v1/reply/target-gyak1-Debug-2d5525f76eb61d3366d7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../gyak1/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../hazi2/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.cmake/api/v1/reply/cache-v2-46087b5da939de5a0b16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-d22c76fdf2a689df4e4b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c8fb8198b4eccd4e6856.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.cmake/api/v1/reply/index-2023-02-21T16-35-13-0449.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../hazi2/cmake-build-debug/build.ninja" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +77,12 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Egyetem\DSA_2023\Lab 2\main\cmake-build-debug" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="main" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="main" RUN_TARGET_NAME="main">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -74,6 +99,8 @@
       <updated>1677061869591</updated>
       <workItem from="1677061871625" duration="825000" />
       <workItem from="1677062787092" duration="5218000" />
+      <workItem from="1677514339537" duration="61000" />
+      <workItem from="1677667036107" duration="510000" />
     </task>
     <servers />
   </component>

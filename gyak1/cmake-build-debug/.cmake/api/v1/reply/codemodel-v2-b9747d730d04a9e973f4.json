@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "gyak1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gyak1-Debug-2d5525f76eb61d3366d7.json",
+					"jsonFile" : "target-gyak1-Debug-71fd271cae2a52d13d49.json",
 					"name" : "gyak1",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Egyetem/DSA/gyak1/cmake-build-debug",
-		"source" : "C:/Egyetem/DSA/gyak1"
+		"build" : "C:/Egyetem/DSA_2023/gyak1/cmake-build-debug",
+		"source" : "C:/Egyetem/DSA_2023/gyak1"
 	},
 	"version" : 
 	{
