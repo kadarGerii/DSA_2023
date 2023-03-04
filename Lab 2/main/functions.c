@@ -103,8 +103,8 @@ void deallocateMemoryForMatrix(int rows, int ***dpMatrix){
 void lastDigit(int rows, int cols, int***dpMatrix){
     for(int i = 0; i < rows; ++i){
         for(int j = 0; j < cols; ++j) {
-            int temp = *dpMatrix[i][j];
-            *dpMatrix[i][j] = temp / 10;
+            int temp = (*dpMatrix)[i][j];
+            (*dpMatrix)[i][j] = temp / 10;
         }
     }
 }

@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <constants.h>
 #include <string.h>
-
 enum Gender{MALE, FEMALE};
 typedef struct{
     int year;

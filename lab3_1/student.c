@@ -84,8 +84,10 @@ int cmp(const void *a, const void *b){
 }
 Student_t findStudentByNeptunCode(Student_t *pStudents, int numberOfStudents, const char *nepCode){
     Student_t search;
+    qsort(pStudents,numberOfStudents,sizeof(Student_t), cmp);
     strncpy(search.neptunCode, nepCode,sizeof(search.neptunCode));
     Student_t *searchResult = (Student_t * ) bsearch(&search, pStudents, numberOfStudents, sizeof(Student_t), cmp);
+    return *searchResult;
 }
 int cmpABC(const void *a, const void *b){
     Student_t *p = (Student_t*)a;
@@ -100,10 +102,10 @@ int cmpAge(const void *a, const void *b){
     Student_t *p = (Student_t*)a;
     Student_t *q = (Student_t*)b;
     if (p->dateOfBirth.year > q -> dateOfBirth.year){
-        return 0;
+        return 1;
     }
     else if (p -> dateOfBirth.year < q -> dateOfBirth.year) {
-        return 1;
+        return 0;
     }
     else{
         if (p -> dateOfBirth.month > q -> dateOfBirth.month)
