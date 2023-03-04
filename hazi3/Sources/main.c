@@ -1,0 +1,6 @@
+#include "../Headers/functions.h"
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
