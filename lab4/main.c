@@ -2,26 +2,32 @@
 
 int main() {
     IntArray array;
-    printf("Read capacity:");
-    scanf("%d", &array.capacity);
-    printf("Read size:");
-    scanf("%d", &array.size);
+    array.capacity = 10;
     createIntArray(array.capacity, &array);
-    srand(time(NULL));
-    for (int i = 0; i < array.size; ++i) {
-        array.items[i] = rand() % 10;
+    printArray(array);
+    for (int i = 0; i < array.capacity/2; ++i) {
+        array.items[i] = i + 1;
+        array.size++;
     }
     printArray(array);
-    int a = search(array, 2);
-    printf("%d", a);
-    /*printf("Get iteam at pos: %d\n", getItemAt(array, 3));
-    insertFirst(&array, 2);
+    printf("%d\n", array.size);
+    int i = array.capacity / 2 + 1;
+    /*while (!isFull(array)) {
+        if(i%2==0)
+            insertFirst(&array, i);
+        else
+            insertLast(&array, i);
+        i++;
+    }*/
+    printf("%d\n", array.size);
     printArray(array);
-    insertLast(&array, 2);
+    printf("\nCHECK\n");
+    srand(time(NULL));
+    while (!isEmpty(array)) {
+        int a = rand() % array.capacity;
+        deleteItemAt(&array, a);
+    }
     printArray(array);
-    insertAt(&array, 2, 3);
-    printArray(array);
-    deleteItemAt(&array,3);
-    printArray(array);*/
+    deallocateIntArray(&array);
     return 0;
 }

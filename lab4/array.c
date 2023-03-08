@@ -9,9 +9,10 @@ void createIntArray(int capacity, IntArray* pArray){
         printf("%s", MEMORY_ALLOCATION_ERROR_MESSAGE);
         exit(MEMORY_ALLOCATION_ERROR_CODE);
     }
+    pArray->size = 0;
 }
 void printArray(IntArray array){
-    for (int i = 0; i < array.capacity; i++) {
+    for (int i = 0; i < array.capacity; ++i) {
         printf("%d ", array.items[i]);
     }
     printf("\n");
@@ -70,10 +71,12 @@ void insertAt(IntArray* pArray, int position, int item){
 }
 void deleteItemAt(IntArray* pArray, int position){
     if(isEmpty(*pArray) == false){
-        for (int i = position; i < pArray -> size; ++i) {
-            pArray -> items[i] = pArray -> items[i+1];
+        if(position >=0 && position < pArray -> size){
+            for (int i = position; i < pArray -> size; ++i) {
+                pArray -> items[i] = pArray -> items[i+1];
+            }
+            pArray -> size--;
         }
-        pArray -> size--;
     }
     else{
         printf("%s\n", ARRAY_IS_EMPTY);
@@ -82,19 +85,21 @@ void deleteItemAt(IntArray* pArray, int position){
 int cmp(const void *a, const void *b){
     int * p = (int *)a;
     int * q = (int *)b;
-    if(p > q)
+    if(*p > *q)
         return 1;
-    else if(p < q)
+    else if(*p < *q)
         return 0;
     else return -1;
 }
-int search(IntArray pArray, int item){
-    qsort(pArray.items, pArray.size, sizeof(int), cmp);
-    int* result =(int*) bsearch(&item, pArray.items, pArray.size, sizeof(int), cmp);
+int *search(IntArray *pArray, int item){
+    qsort(pArray->items, pArray->size, sizeof(int), cmp);
+    IntArray s;
+    s.items = pArray -> items;
+    int *result =  bsearch(s.items, pArray->items, pArray->size, sizeof(int), cmp);
     if (result == NULL) {
         return -1;
     }
-    return *result;
+    return result;
 }
 bool update(IntArray* pArray, int position, int newItem){
     if(position >= 0 && position <= pArray->size){
