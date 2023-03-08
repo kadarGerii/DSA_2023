@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <constants.h>
+#include <time.h>
 
 typedef struct {
     int capacity;
