@@ -4,26 +4,31 @@
 
 #include "array.h"
 void createIntArray(int capacity, IntArray* pArray){
-    pArray->items = (int *)calloc(capacity, sizeof(int));
+    pArray->capacity = capacity;
+    pArray->size = 0;
+    pArray->items = (int *)calloc(pArray->capacity, sizeof(int));
     if(pArray->items == NULL){
         printf("%s", MEMORY_ALLOCATION_ERROR_MESSAGE);
         exit(MEMORY_ALLOCATION_ERROR_CODE);
     }
-    pArray->size = 0;
 }
 void printArray(IntArray array){
-    for (int i = 0; i < array.capacity; ++i) {
+    if(isEmpty(array)){
+        printf("%s\n", ARRAY_IS_EMPTY);
+        return;
+    }
+    for (int i = 0; i < array.size; ++i) {
         printf("%d ", array.items[i]);
     }
     printf("\n");
 }
 bool isFull(IntArray array){
-    if (array.capacity == array.size)
+    if (array.size == array.capacity)
         return true;
     return false;
 }
 bool isEmpty(IntArray array){
-    if (0 == array.size)
+    if (array.size == 0)
         return true;
     return false;
 }
@@ -37,49 +42,45 @@ int getItemAt(IntArray array, int position){
     }
 }
 void insertFirst(IntArray* pArray, int item){
-    if(isFull(*pArray) == false){
-        for(int i = pArray->size; i >= 0; --i){
-            pArray->items[i+1] = pArray->items[i];
-        }
-        pArray->size++;
-        pArray -> items[0] = item;
-    }
-    else{
+    if(isFull(*pArray)){
         printf("%s\n", ARRAY_IS_FULL);
+        return;
     }
+    for(int i = pArray->size; i > 0; --i){
+        pArray->items[i] = pArray->items[i-1];
+    }
+    pArray -> items[0] = item;
+    pArray->size++;
 }
 void insertLast(IntArray* pArray, int item){
-    if(isFull(*pArray) == false){
-        pArray -> items[pArray->size] = item;
-        pArray->size++;
-    }
-    else{
+    if(isFull(*pArray)){
         printf("%s\n", ARRAY_IS_FULL);
+        return;
     }
+    pArray -> items[pArray->size++] = item;
 }
 void insertAt(IntArray* pArray, int position, int item){
-    if(isFull(*pArray) == false){
-        for (int i = pArray -> size; i >= 0; --i) {
-            pArray -> items[i+1] = pArray -> items[i];
-        }
-        pArray -> size++;
-        pArray-> items[position] = item;
-    }
-    else{
+    if(isFull(*pArray)){
         printf("%s\n", ARRAY_IS_FULL);
+        return;
     }
+    for (int i = position; i > 0; --i) {
+        pArray -> items[i] = pArray -> items[i-1];
+    }
+    pArray -> size++;
+    pArray-> items[position] = item;
 }
 void deleteItemAt(IntArray* pArray, int position){
-    if(isEmpty(*pArray) == false){
-        if(position >=0 && position < pArray -> size){
-            for (int i = position; i < pArray -> size; ++i) {
-                pArray -> items[i] = pArray -> items[i+1];
-            }
-            pArray -> size--;
-        }
-    }
-    else{
+    if(isEmpty(*pArray)){
         printf("%s\n", ARRAY_IS_EMPTY);
+        return;
+    }
+    if(position >= 0 && position < pArray -> size){
+        for (int i = position; i < pArray -> size - 1; ++i) {
+            pArray -> items[i] = pArray -> items[i+1];
+        }
+        pArray -> items[pArray -> size - 1] = 0;
+        pArray -> size--;
     }
 }
 int cmp(const void *a, const void *b){
@@ -91,15 +92,12 @@ int cmp(const void *a, const void *b){
         return 0;
     else return -1;
 }
-int *search(IntArray *pArray, int item){
-    qsort(pArray->items, pArray->size, sizeof(int), cmp);
-    IntArray s;
-    s.items = pArray -> items;
-    int *result =  bsearch(s.items, pArray->items, pArray->size, sizeof(int), cmp);
-    if (result == NULL) {
-        return -1;
+int search(IntArray *pArray, int item){
+    for(int i = 0; i < pArray->capacity; ++i){
+        if(pArray -> items[i] == item)
+            return i;
     }
-    return result;
+    return -1;
 }
 bool update(IntArray* pArray, int position, int newItem){
     if(position >= 0 && position <= pArray->size){
