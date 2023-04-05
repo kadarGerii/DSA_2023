@@ -4,7 +4,7 @@
 int main() {
     Queue queue;
     createQueue(5, &queue);
-    int x;
+    char x[8];
     while(1){
         int option;
         printf("\nChoose from the following:"
@@ -18,6 +18,7 @@ int main() {
         scanf("%d", &option);
         switch (option) {
             case 0:
+                destroyQueue(&queue);
                 printf("Exit...");
                 return 0;
             case 1 :
@@ -27,7 +28,7 @@ int main() {
                 printf("The queue is %s", (isEmpty(queue) ? "EMPTY" : "NOT EMPTY"));
                 break;
             case 3 :
-                scanf("%d", &x);
+                scanf("%s", x);
                 enqueue(&queue, x);
                 break;
             case 4 :
@@ -36,9 +37,8 @@ int main() {
             case 5 :
                 display(queue);
                 break;
-
-
+            default:
+                printf("Invalid code! Choose another!");
         }
     }
-    return 0;
 }

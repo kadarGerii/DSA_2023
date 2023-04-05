@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="lab5_3" targetName="lab5_3" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c3de85a-49db-4cdf-9066-0820f4d559ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/lab5_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Headers/circular_queue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Headers/patients.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/circular_queue.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/patients.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-432b347fee6f273ba247.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-22T12-56-26-0813.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab5_3-Debug-3d6d1973b425ba4d0023.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/Headers/regular_queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/Headers/regular_queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/Sources/regular_queue.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/Sources/regular_queue.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/lab5_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/cmake-build-debug/lab5_2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_2/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_2/main.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2.3" />
+  </component>
+  <component name="ProjectId" id="2NMrS1JiCUvht6sXkT2rRnlUHBF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Egyetem\DSA_2023\lab5_3\Headers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="lab5_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab5_3" TARGET_NAME="lab5_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab5_3" RUN_TARGET_NAME="lab5_3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c3de85a-49db-4cdf-9066-0820f4d559ae" name="Changes" comment="" />
+      <created>1679484791364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679484791364</updated>
+      <workItem from="1679484795543" duration="2122000" />
+      <workItem from="1679489786180" duration="788000" />
+      <workItem from="1679490583559" duration="92000" />
+      <workItem from="1679490683481" duration="1953000" />
+      <workItem from="1679495765465" duration="67000" />
+      <workItem from="1679826380702" duration="5668000" />
+      <workItem from="1679833019385" duration="566000" />
+      <workItem from="1679834510657" duration="836000" />
+      <workItem from="1679924104037" duration="62000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

@@ -14,13 +14,13 @@ typedef struct {
     int capacity;
     int front;
     int rear;
-    int *elements;
+    char **elements;
 }Queue;
 void createQueue(int capacity, Queue *queue);
 void destroyQueue(Queue* queue);
 bool isFull(Queue queue);
 bool isEmpty(Queue queue);
-void enqueue(Queue* queue, int item);
+void enqueue(Queue* queue, char* item);
 int dequeue(Queue* queue);
 void display(Queue queue);
 #endif //LAB5_2_REGULAR_QUEUE_H
