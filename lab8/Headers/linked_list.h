@@ -65,4 +65,6 @@ void sortLinkedList(Node** head_ref);
 * @param node
 */
 void printList(Node* node);
+int cmp(const void *a, const void *b);
+int size(Node* head);//visszeteriti a lista hosszat
 #endif //LAB8_LINKED_LIST_H

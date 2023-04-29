@@ -4,9 +4,9 @@ int main() {
     Node *head1 = NULL;
     Node *head2 = NULL;
     int num1, num2;
-    printf("Elso szam: ");
+    printf("Elso szam:");
     scanf("%d", &num1);
-    printf("Masodik szam: ");
+    printf("Masodik szam:");
     scanf("%d", &num2);
     while(num1 != 0){
         insertAtEnd(&head1, num1%10);
@@ -45,5 +45,38 @@ int main() {
     if(m != 0)
         insertAtEnd(&head3, m);
     printList(head3);
+    head1 = head3;
+    int temp = 0;
+    while (head1 != NULL) {
+        temp = temp * 10 + head1->data;
+        head1 = head1->next;
+    }
+    int result=0;
+    while(temp != 0) {
+        result = result * 10 + temp % 10;
+        temp/=10;
+    }
+    printf("\nEredmeny: %d\n", result);
+    while(head3 != 0){
+        insertAtEnd(&head1, head3->data);
+        if(head3->data % 2 == 0)
+            insertAtEnd(&head1, 0);
+        head3 = head3->next;
+    }
+    printList(head1);
+    insertAtEnd(&head1, 1);
+    insertAtBeginning(&head1, 1);
+    printf("\n");
+    printList(head1);
+    int key;
+    printf("\nkeresett ertek:");
+    scanf("%d", &key);
+    if(searchNode(head1, key)){
+        deleteNode(&head1, key);
+    }
+    printList(head1);
+    printf("\n");
+    sortLinkedList(&head1);
+    printList(head1);
     return 0;
 }

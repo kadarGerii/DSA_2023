@@ -102,6 +102,35 @@ void printList(Node* node) {
     }
     printf("%4d ", node->data);
 }
+int cmp(const void *a, const void *b) {
+    int *p = (int*)a;
+    int *q = (int*)b;
+    if(*p > *q)
+        return 1;
+    else if (*p < *q)
+        return -1;
+    else return 0;
+}
 void sortLinkedList(Node** head_ref){
-
+    int *array = (int *)malloc(size(*head_ref)*sizeof(int));
+    int i = 0;
+    while(*head_ref != NULL){
+        array[i] = (*head_ref)->data;
+        ++i;
+        *head_ref = (*head_ref)->next;
+    }
+    int n = i;
+    qsort(array, n, sizeof(int), cmp);
+    for(i = 0; i < n; ++i){
+        insertAtEnd(head_ref,array[i]);
+    }
+}
+int size(Node* head){
+    Node *current = head;
+    int size = -1;
+    while(current != NULL){
+        ++size;
+        current = current -> next;
+    }
+    return size;
 }
