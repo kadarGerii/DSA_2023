@@ -1,7 +1,7 @@
 #include "Headers/linked_list.h"
-
+void createNumbers(int n);
 int main() {
-    Node *head1 = NULL;
+    /*Node *head1 = NULL;
     Node *head2 = NULL;
     int num1, num2;
     printf("Elso szam:");
@@ -77,6 +77,26 @@ int main() {
     printList(head1);
     printf("\n");
     sortLinkedList(&head1);
-    printList(head1);
+    printList(head1);*/
+    createNumbers(12345);
     return 0;
+}
+void createNumbers(int n){
+    Node *head1 = NULL;
+    Node *head2 = NULL;
+    while(n != 0){
+        if((n%10)%2 == 0){
+            insertAtBeginning(&head1,n%10);
+            insertAtEnd(&head2,n%10);
+            n /= 10;
+        }
+        else {
+            insertAtBeginning(&head2, n % 10);
+            insertAtEnd(&head1, n%10);
+            n /= 10;
+        }
+    }
+    printList(head1);
+    printf("\n");
+    printList(head2);
 }
