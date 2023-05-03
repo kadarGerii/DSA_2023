@@ -1,0 +1,5 @@
+# ninja log v5
+2	129	7048131616930623	build.ninja	cc3e11defdc2890f
+2	62	7048130983078199	CMakeFiles/lab8.dir/main.c.obj	24679c14cf862dc1
+62	133	7048130983768523	lab8.exe	8757b940260af2a2
+2	71	7048126525766094	CMakeFiles/lab8.dir/Sources/sorted_list.c.obj	3c8728003a54ff5d
