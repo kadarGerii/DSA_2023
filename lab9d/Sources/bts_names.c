@@ -2,9 +2,8 @@
 // Created by Administrator on 2023-05-03.
 //
 
-#include "../Headers/bst.h"
-
-Node *createNewNode(int newData) {
+#include "../Headers/bts_names.h"
+Node *createNewNode(Person newData) {
     Node *newNode = malloc(sizeof(Node));
     if (!newNode) {
         printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
@@ -16,19 +15,39 @@ Node *createNewNode(int newData) {
     return newNode;
 }
 
-Node *insert(Node *root, int key) {
+Node *insert(Node *root, Person key) {
     if (root == NULL)
         return createNewNode(key);
-    if (key < root->info)
+    if (strcmp(root->info.name, key.name) == 1)
         root->left = insert(root->left, key);
-    else
+    else if (strcmp(root->info.name, key.name) == -1)
         root->right = insert(root->right, key);
+    else{
+        if (root->info.birthdate.year > key.birthdate.year)
+            root -> left = insert(root -> left, key);
+        else if (root -> info.birthdate.year < key.birthdate.year){
+            root->right = insert(root->right, key);
+        }
+        else{
+            if (root -> info.birthdate.month > key.birthdate.month) {
+                root -> left = insert(root -> left, key);
+            }
+            else if (root -> info.birthdate.month < key.birthdate.month){
+                root->right = insert(root->right, key);
+            }
+            else{
+                if (root -> info.birthdate.day > key.birthdate.day) {
+                    root -> left = insert(root -> left, key);
+                } else root->right = insert(root->right, key);
+            }
+        }
+    }
     return root;
 }
 void inorderTraversal(Node *root) {
     if(root==NULL) return;
     inorderTraversal(root->left);
-    printf("%i ",root->info);
+    printf("%s %d/%d/%d\n",root->info.name, root->info.birthdate.year, root->info.birthdate.month, root->info.birthdate.day);
     inorderTraversal(root->right);
 }
 Node *minValueNode(Node *root) {
@@ -45,11 +64,11 @@ Node *maxValueNode(Node *root) {
     return current;
 }
 
-Node *deleteNode(Node *root, int key) {
+Node *deleteNode(Node *root, Person key) {
     if (root == NULL) return root;
-    if (key < root->info)
+    if (strcmp(key.name, root->info.name) == -1)
         root->left = deleteNode(root->left, key);
-    else if (key > root->info)
+    else if (strcmp(key.name, root->info.name) == 1)
         root->right = deleteNode(root->right, key);
     else {
         if (root->left == NULL) {

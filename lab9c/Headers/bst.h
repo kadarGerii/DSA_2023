@@ -11,17 +11,12 @@ typedef struct Node{
     int info;
     struct Node *left, *right;
 }Node;
-//create a new node
 Node *createNewNode(int newData);
-//insert on the left of the node
 Node *insert(Node *root, int key);
-Node *insertLeft(Node *root, int newData);
-//insert on the right of the node
-Node *insertRight(Node *root, int newData);
-//preorder traversal
-void preorderTraversal(Node *root);
-//inorder traversal
+//Node *insertLeft(Node *root, int newData);
+//Node *insertRight(Node *root, int newData);
 void inorderTraversal(Node *root);
-//postorder traversal
-void postorderTraversal(Node *root);
+Node *minValueNode(Node *root);
+Node *maxValueNode(Node *root);
+Node *deleteNode(Node *root, int key);
 #endif //LAB9C_BST_H

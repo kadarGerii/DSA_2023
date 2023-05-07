@@ -121,7 +121,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Sources/bst.h",
+			"path" : "Headers/bst.h",
 			"sourceGroupIndex" : 1
 		}
 	],
