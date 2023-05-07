@@ -4,7 +4,7 @@
 
 #include "../Headers/bts_names.h"
 Node *createNewNode(Person newData) {
-    Node *newNode = malloc(sizeof(Node));
+    Node *newNode = (Node*)malloc(sizeof(Node));
     if (!newNode) {
         printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
         exit(MEMORY_ALLOCATION_ERROR_CODE);
