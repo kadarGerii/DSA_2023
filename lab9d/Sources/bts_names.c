@@ -16,8 +16,10 @@ Node *createNewNode(Person newData) {
 }
 
 Node *insert(Node *root, Person key) {
-    if (root == NULL)
-        return createNewNode(key);
+    if (root == NULL){
+        root = createNewNode(key);
+        return root;
+    }
     if (strcmp(root->info.name, key.name) == 1)
         root->left = insert(root->left, key);
     else if (strcmp(root->info.name, key.name) == -1)
